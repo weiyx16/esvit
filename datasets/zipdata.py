@@ -32,7 +32,7 @@ class ZipData(data.Dataset):
                     continue
                 assert len(cls_idx) >= 2, "invalid line: {}".format(line)
                 idx = int(cls_idx[1])
-                cls = cls_idx[0]
+                cls = '@'+cls_idx[0]
                 del cls_idx
                 at_idx = cls.find('@')
                 assert at_idx >= 0, "invalid class: {}".format(cls)

@@ -16,7 +16,7 @@ MODEL:
     QKV_BIAS: True
     DROP_RATE: 0
     ATTN_DROP_RATE: 0
-    DROP_PATH_RATE: 0.2
+    DROP_PATH_RATE: 0.3
     USE_APE: False
     PATCH_NORM: True
 AUG:
@@ -41,7 +41,7 @@ CUDNN:
   DETERMINISTIC: false
   ENABLED: true
 DATASET:
-  DATASET: 'imagenet'
+  DATASET: 'imagenet1k'
   DATA_FORMAT: 'tsv'
   ROOT: 'DATASET/imagenet-tsv/'
   TEST_SET: 'val'
